@@ -1,4 +1,4 @@
-import{J as s,D as l,E as c,m as d,a0 as u}from"./index-RW0gPhT6.js";import{h as r}from"./http-CLrmqCzG.js";var p=function(e){var n=e.dt;return`
+import{J as s,D as l,E as c,m as d,a0 as u}from"./index-DQ09DRTx.js";import{h as r}from"./http-D0lPt2Q8.js";var p=function(e){var n=e.dt;return`
 .p-skeleton {
     overflow: hidden;
     background: `.concat(n("skeleton.background"),`;
