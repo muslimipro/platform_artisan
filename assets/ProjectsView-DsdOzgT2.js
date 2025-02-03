@@ -1,0 +1,32 @@
+import{X as U,o as t,c as s,v as p,U as k,j as v,e as d,aa as X,d as q,g as N,ab as G,a as z,ac as F,r as _,a6 as H,h,w as S,b as C,f as I,t as J,V,s as M,ad as K,u as Q,ae as W,l as Y,y as Z,F as B,k as R,q as ee}from"./index-2A5d1rMW.js";import{a as A,t as L,s as te}from"./types-C9nc1UIW.js";import{_ as ae}from"./AHeader.vue_vue_type_script_setup_true_lang-DldZzK6t.js";import{s as oe,u as re,a as se,m as ne}from"./useSortable-BQtWMsIK.js";import{s as ce}from"./logo-Brxu7FOG.js";import{P as ie}from"./pibody-BwAjMvHk.js";import"./http-CjZYp4su.js";import"./index-CKEqp2QD.js";import"./LocaleSwitcher.vue_vue_type_script_setup_true_lang-DGVTYdP5.js";import"./index-CaqDq2FH.js";var le=function(u){var a=u.dt;return`
+.p-card {
+    background: `.concat(a("card.background"),`;
+    color: `).concat(a("card.color"),`;
+    box-shadow: `).concat(a("card.shadow"),`;
+    border-radius: `).concat(a("card.border.radius"),`;
+    display: flex;
+    flex-direction: column;
+}
+
+.p-card-caption {
+    display: flex;
+    flex-direction: column;
+    gap: `).concat(a("card.caption.gap"),`;
+}
+
+.p-card-body {
+    padding: `).concat(a("card.body.padding"),`;
+    display: flex;
+    flex-direction: column;
+    gap: `).concat(a("card.body.gap"),`;
+}
+
+.p-card-title {
+    font-size: `).concat(a("card.title.font.size"),`;
+    font-weight: `).concat(a("card.title.font.weight"),`;
+}
+
+.p-card-subtitle {
+    color: `).concat(a("card.subtitle.color"),`;
+}
+`)},de={root:"p-card p-component",header:"p-card-header",body:"p-card-body",caption:"p-card-caption",title:"p-card-title",subtitle:"p-card-subtitle",content:"p-card-content",footer:"p-card-footer"},pe=U.extend({name:"card",theme:le,classes:de}),ue={name:"BaseCard",extends:X,style:pe,provide:function(){return{$pcCard:this,$parentInstance:this}}},O={name:"Card",extends:ue,inheritAttrs:!1};function me(e,u,a,y,P,b){return t(),s("div",p({class:e.cx("root")},e.ptmi("root")),[e.$slots.header?(t(),s("div",p({key:0,class:e.cx("header")},e.ptm("header")),[k(e.$slots,"header")],16)):v("",!0),d("div",p({class:e.cx("body")},e.ptm("body")),[e.$slots.title||e.$slots.subtitle?(t(),s("div",p({key:0,class:e.cx("caption")},e.ptm("caption")),[e.$slots.title?(t(),s("div",p({key:0,class:e.cx("title")},e.ptm("title")),[k(e.$slots,"title")],16)):v("",!0),e.$slots.subtitle?(t(),s("div",p({key:1,class:e.cx("subtitle")},e.ptm("subtitle")),[k(e.$slots,"subtitle")],16)):v("",!0)],16)):v("",!0),d("div",p({class:e.cx("content")},e.ptm("content")),[k(e.$slots,"content")],16),e.$slots.footer?(t(),s("div",p({key:1,class:e.cx("footer")},e.ptm("footer")),[k(e.$slots,"footer")],16)):v("",!0)],16)],16)}O.render=me;const fe={class:"h-[174px] overflow-hidden"},ve={class:"flex justify-between items-center px-4 py-1"},he={class:"pb-1"},ye={class:"flex"},T=q({__name:"ProjectCard",props:{project:{}},emits:["after-remove"],setup(e,{emit:u}){const a=N(),y=G(),P=z(),{user:b}=F(P),m=_(!1),l=e,D=u;function c(){y.require({message:"Are you sure you want to Delete?",header:"Confirmation",icon:"pi pi-exclamation-triangle",rejectProps:{label:"Cancel",severity:"secondary",outlined:!0},acceptProps:{label:"Delete",severity:"danger"},accept:()=>{$()}})}async function $(){m.value=!0;try{await A.deleteProjectByID(l.project.id),D("after-remove")}catch(f){alert(f)}finally{m.value=!1}}function g(){a.push(`/project/${l.project.id}/edit`)}return(f,j)=>{const E=ce,o=oe,r=M,i=O,x=H("RouterLink");return t(),h(x,{to:m.value?"":`/project/${l.project.id}`},{default:S(()=>[C(i,{style:{width:"300px",height:"234px",overflow:"hidden"},class:"p-0",dt:{body:{padding:"0px",gap:"2px"}}},{header:S(()=>[d("div",fe,[C(E,{alt:"user header",src:l.project.cover_image.length>0?l.project.cover_image:I(ie),class:"animate-fadein animate-once animate-duration-1000 animate-ease-in-out"},null,8,["src"])])]),subtitle:S(()=>{var w,n;return[d("div",ve,[d("div",null,[d("div",he,J(l.project.title),1),C(o,{"model-value":l.project.level,readonly:""},null,8,["model-value"])]),d("div",ye,[((w=I(b))==null?void 0:w.user_type)=="editor"?(t(),h(r,{key:0,icon:"pi pi-pen-to-square",severity:"info",variant:"text",rounded:"","aria-label":"Edit",onClick:V(g,["prevent"])})):v("",!0),((n=I(b))==null?void 0:n.user_type)=="editor"?(t(),h(r,{key:1,icon:"pi pi-trash",severity:"danger",variant:"text",rounded:"","aria-label":"Remove",onClick:V(c,["prevent"]),disabled:m.value,loading:m.value},null,8,["disabled","loading"])):v("",!0)])])]}),_:1})]),_:1},8,["to"])}}}),ge={class:"flex flex-col min-h-screen bg-slate-50"},be={class:"border border-dashed rounded-xl border-green-400 overflow-hidden"},$e={key:1,class:"flex flex-wrap justify-center gap-8 px-12 py-6"},Ie=q({__name:"ProjectsView",setup(e){const u=K("el"),a=Q(),{locale:y}=W(),P=N(),b=re(),{addLesson:m}=b,l=z(),{user:D}=F(l),c=_([]),$=_(0),g=_(!1),f=_(!1);se(u,c,{onUpdate:o=>{ne(c.value,o.oldIndex,o.newIndex,o),ee(async()=>{const r=[];c.value.map(i=>{const x=parseInt(i.id,10);r.push(x)});try{await A.changeProjectsOrder(r),a.add({severity:"success",summary:"Projects order saved!",life:2e3})}catch(i){a.add({severity:"error",summary:"Order set error!",detail:i,life:2e3})}})}});async function j(){if(!g.value){g.value=!0;try{const{data:o}=await A.getProjects();g.value=!1,c.value=[],$.value=o.length;for(const r of o){const i=await L(r,y.value);c.value.push(i)}}catch(o){alert(o)}finally{g.value=!1}}}Y(j),Z(y,j);async function E(){f.value=!0;try{const{data:o}=await A.createProject(),r=await L(o,y.value);m(r),P.push(`/project/${r.id}/edit`)}catch(o){alert(o)}finally{f.value=!1}}return(o,r)=>{var w;const i=te,x=M;return t(),s("div",ge,[C(ae),((w=I(D))==null?void 0:w.user_type)=="editor"?(t(),s("div",{key:0,ref_key:"el",ref:u,class:"flex flex-wrap justify-center gap-8 px-12 py-6"},[(t(!0),s(B,null,R(c.value,n=>(t(),h(T,{key:n.id,project:n,onAfterRemove:j},null,8,["project"]))),128)),(t(!0),s(B,null,R($.value-c.value.length,n=>(t(),h(i,{key:n,width:"300px",height:"234px",class:"rounded-xl shadow-sm"}))),128)),d("div",be,[C(x,{variant:"text",style:{width:"300px",height:"234px"},class:"bg-green-50",onClick:E,loading:f.value,disabled:f.value},{icon:S(()=>r[0]||(r[0]=[d("i",{class:"pi pi-plus text-3xl"},null,-1)])),_:1},8,["loading","disabled"])])],512)):(t(),s("div",$e,[(t(!0),s(B,null,R(c.value,n=>(t(),h(T,{key:n.id,project:n,onAfterRemove:j},null,8,["project"]))),128)),(t(!0),s(B,null,R($.value-c.value.length,n=>(t(),h(i,{key:n,width:"300px",height:"234px",class:"rounded-xl shadow-sm"}))),128))]))])}}});export{Ie as default};

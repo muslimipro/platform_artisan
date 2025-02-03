@@ -1,4 +1,4 @@
-import{X as D,aa as K,x as F,v as r,ai as V,aG as H,o,c as u,e as O,ah as R,h,ag as B,a7 as C,j as c,t as T,Y as w,Z as k,av as v,aN as y,N as M,_ as N,a1 as U,a0 as I,a2 as Z,a3 as W,a4 as j,a5 as q,a6 as S,w as A,b as G,a8 as X,U as L,F as p,k as E,i as Y}from"./index-DElZpIc3.js";var J=function(e){var n=e.dt;return`
+import{X as D,aa as K,x as F,v as r,ai as V,aG as H,o,c as u,e as O,ah as R,h,ag as B,a7 as C,j as c,t as T,Y as w,Z as k,av as v,aN as y,N as M,_ as N,a1 as U,a0 as I,a2 as Z,a3 as W,a4 as j,a5 as q,a6 as S,w as A,b as G,a8 as X,U as L,F as p,k as E,i as Y}from"./index-2A5d1rMW.js";var J=function(e){var n=e.dt;return`
 .p-menu {
     background: `.concat(n("menu.background"),`;
     color: `).concat(n("menu.color"),`;
