@@ -1,1 +1,0 @@
-import{a6 as o,r}from"./index-CbeY2LTE.js";import{T as l}from"./teacherApi-2G2BCmms.js";const i=o("useTeacherStore",()=>{const e=r([]),a=r(!1);async function t(){try{a.value=!0;const{data:s}=await l.getClasses();s?e.value=s:e.value=[]}finally{a.value=!1}}return{classes:e,isLoading:a,loadClasses:t}});export{i as u};
